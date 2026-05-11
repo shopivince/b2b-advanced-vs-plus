@@ -419,16 +419,24 @@
         <tbody>
           <tr>
             <td>
-              <strong>Checkout UI Extensions</strong><br>
-              <span style="font-size:12px;color:#6b7280;">Banners, fields, messages, blocks inside checkout</span>
+              <strong>UI Extensions — Thank you / Order status / Customer Account pages</strong><br>
+              <span style="font-size:12px;color:#6b7280;">Post-purchase content, order tracking, customer dashboard widgets</span>
             </td>
             <td class="check">✓</td>
             <td class="check">✓</td>
           </tr>
           <tr>
             <td>
+              <strong>UI Extensions — Information / Shipping / Payment pages</strong> <span class="tag tag-plus">Plus only</span><br>
+              <span style="font-size:12px;color:#6b7280;">Banners, custom fields, messages inside the checkout steps themselves</span>
+            </td>
+            <td class="cross">✗</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>
               <strong>Market overrides in UI Extensions</strong><br>
-              <span style="font-size:12px;color:#6b7280;">Different checkout UI per market</span>
+              <span style="font-size:12px;color:#6b7280;">Different checkout UI per market (inherits the underlying UI Extension's plan requirement)</span>
             </td>
             <td class="check">✓</td>
             <td class="check">✓</td>
@@ -451,6 +459,68 @@
           </tr>
         </tbody>
       </table>
+
+      <details style="margin-top: 18px; border: 1px solid #e5e7eb; border-radius: 8px; background: #fafafa;">
+        <summary style="cursor: pointer; padding: 12px 16px; font-weight: 600; font-size: 13px; color: #374151;">
+          Reference: Full plan availability table from Shopify Help Center
+        </summary>
+        <div style="padding: 0 16px 16px;">
+          <p style="font-size: 12px; color: #6b7280; margin: 8px 0 12px;">
+            Source: <a href="https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-apps#availability" target="_blank">help.shopify.com — Customizing your checkout and customer accounts with apps →</a>
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>App type</th>
+                <th>Basic Shopify plan or higher</th>
+                <th>Shopify Plus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Apps built with web pixel app extensions</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Apps built with post-purchase app extensions</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Public apps built with Shopify Functions</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Custom apps built with Shopify Functions</td>
+                <td class="cross">✗</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Apps built with UI extensions for the thank you and order status pages</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Apps built with UI extensions for all customer accounts pages</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Apps built with UI extensions for the information, shipping, and payment pages</td>
+                <td class="cross">✗</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td>Checkout Blocks — free app for customizing checkout with UI extensions and Shopify Functions</td>
+                <td class="partial">✓ (with restrictions)</td>
+                <td class="check">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
     </div>
 
     <!-- SECTION 6: Additional Note on Plus-only APIs -->
